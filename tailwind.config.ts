@@ -13,7 +13,16 @@ export default {
         foreground: "var(--foreground)",
         colorTextGray: "#666666",
         colorTextGreen: "#4CAF93",
-        colorTextBtn: "#505050"
+        colorTextHover: "#459d84",
+        colorTextBtn: "#505050",
+        backgroundcolor: "#FBFBFB",
+        widthSquareLarge: "614px"
+      },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
       },
     },
   },

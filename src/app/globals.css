@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,4 +23,87 @@
   scroll-behavior: smooth;
   list-style: none;
   text-decoration: none;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Arquivo styles.css */
+
+/* Media queries para dispositivos móveis */
+@media (max-width: 769px) {
+  /* Ajustes para telas menores */
+  .area-container {
+    padding: 1rem;
+    width: 100%;
+    height: 500px;
+  }
+
+  .buttons-grid {
+    flex-direction: column;
+  }
+
+  .buttons-grid button {
+    height: 180px;
+  }
+
+  .text-align-banner{
+    text-align: center;
+    align-items: center;
+    margin: 0 16px;
+  }
+
+  .responsive-about h2{
+    font-size: 40px;
+  }
+
+  .responsive-about p{
+    font-size: 14px;
+  }
+
+  .responsive-about h3{
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes para telas ainda menores */
+  .area-container {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .buttons-grid button {
+    height: 150px;
+  }
+
+  .text-align-banner h1{
+    font-size: 50px;
+    line-height: 55px;
+    margin: 0;
+  }
+
+  .text-align-banner h2{
+    font-size: 17px;
+  }
+
+  .responsive-section-about{
+    padding: 50px 16px;
+  }
+
+  .responsive-count{
+    padding-top: 80px;
+  }
+
+  .responsive-atuation{
+    padding-bottom: 0;
+  }
+
+  .responsive-patients{
+    padding-top: 25px;
+  }
 }

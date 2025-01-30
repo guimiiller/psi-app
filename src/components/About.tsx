@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export function About() {
     return (
-        <section className="bg-backgroundcolor flex flex-col md:flex-row items-center justify-center py-24 px-4 responsive-section-about">
-            <div className="flex flex-col flex- max-w-xl w-full md:ml-10 lg:ml-20 responsive-about">
+        <section className="bg-backgroundcolor flex flex-col md:flex-row items-center justify-center py-24 px-4 responsive-section-about w-full">
+            <div className="flex flex-col max-w-xl w-full md:ml-10 lg:ml-20 responsive-about">
                 <h4 className="text-lg text-colorTextGray mb-2">Sobre Mim</h4>
                 <h2 className="text-5xl text-colorTextGreen mb-6 md:mb-16">
                     PSI. LUDIMYLA LOPES

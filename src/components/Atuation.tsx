@@ -41,7 +41,7 @@ export function Atuation() {
           className="flex flex-col pl-14 pr-28 border rounded-md border-colorTextGreen justify-center mb-8 lg:mb-0 lg:w-[700px] lg:h-[500px] md:w-[500px] md:h-[500px] sm:w-full area-container"
         >
           <h3 className="text-base text-colorTextGray mb-1">Sobre Mim</h3>
-          <h2 className="text-3xl text-colorTextGreen mb-8 uppercase">
+          <h2 className="text-[35px] text-colorTextGreen mb-8 uppercase">
             {currentArea?.title}
           </h2>
           <h4 className="text-lg font-medium text-colorTextGreen mb-4">

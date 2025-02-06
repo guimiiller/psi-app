@@ -10,7 +10,7 @@ export function Count() {
     const [ref3, inView3] = useInView({ triggerOnce: true });
 
     return (
-        <section className="bg-backgroundcolor pt-36 pb-20 responsive-count">
+        <section className="bg-backgroundcolor py-20 responsive-count">
             <div className="max-w-5xl mx-auto text-center">
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
                     <div className="flex flex-col items-center" ref={ref1}>

@@ -12,7 +12,7 @@ export function Banner() {
                 <h2 className="text-xl font-light text-colorTextGray sm:text-lg">
                     Aqui, você encontra um espaço seguro para o autoconhecimento e o bem-estar emocional.
                 </h2>
-                <Button />
+                <Button isMargin={false} variant="transparent" />
             </div>
         </section>
     );

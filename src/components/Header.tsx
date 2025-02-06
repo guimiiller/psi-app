@@ -16,7 +16,7 @@ export function Header() {
                     </Link>
 
                     {/* Navegação Desktop */}
-                    <ul className="hidden md:flex justify-center items-center gap-10 lg:gap-52 mx-auto">
+                    <ul className="hidden md:flex justify-center items-center gap-10 lg:gap-48 mx-auto">
                         <li><Link href="/" className="text-colorTextBtn text-sm tracking-wider hover:text-gray-300 transition">Home</Link></li>
                         <li><Link href="#about" className="text-colorTextBtn text-sm tracking-wider hover:text-gray-300 transition">Sobre</Link></li>
                         <li><Link href="#projects" className="text-colorTextBtn text-sm tracking-wider hover:text-gray-300 transition">Projetos</Link></li>

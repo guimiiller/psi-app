@@ -21,21 +21,46 @@
 
 /* Arquivo styles.css */
 
+
+@media (min-width: 1440px){
+  .buttons-grid {
+    max-width: 300px;
+  }
+  
+}
+
 /* Media queries para dispositivos móveis */
 @media (max-width: 769px) {
-  /* Ajustes para telas menores */
   .area-container {
     padding: 1rem;
     width: 100%;
     height: 500px;
+    padding-left: 40px;
+  }
+
+  .responsive-atuation{
+    padding-bottom: 0;
   }
 
   .buttons-grid {
+    flex-direction: row;
+    max-width: 500px;
+  }
+  .responsive-section-about{
+    padding-top: 0;
+  }
+  
+  .responsive-section-about div{
     flex-direction: column;
   }
 
+  .responsive-about{
+    margin: 0;
+  } 
+
   .buttons-grid button {
-    height: 180px;
+    width: 350px;
+    height: 150px;
   }
 
   .text-align-banner{
@@ -56,6 +81,12 @@
     font-size: 20px;
     line-height: 25px;
   }
+
+  .contact-box {
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }  
 }
 
 @media (max-width: 480px) {
@@ -65,8 +96,24 @@
     width: 100%;
   }
 
+  .area-container h2{
+    font-size: 30px;
+  }
+
+  .square-atuation{
+    padding: 0;
+  }
+
+  .responsive-benefits{
+    padding: 40px 16px;
+  }
+
+  .responsive-faq{
+    padding: 40px 16px;
+  }
+
   .buttons-grid button {
-    height: 150px;
+    height: 90px;
   }
 
   .text-align-banner h1{
@@ -79,22 +126,20 @@
     font-size: 17px;
   }
 
-  .responsive-section-about{
-    padding: 50px 16px;
-  }
-
   .responsive-count{
-    padding-top: 80px;
-  }
-
-  .responsive-atuation{
-    padding-bottom: 0;
+    padding: 30px 0;
   }
 
   .responsive-patients{
     padding-top: 25px;
   }
 }
+
+@media (max-width: 376px){
+  .contact-box {
+    width: 300px;
+  }  
+} 
 
 @layer base {
   :root {

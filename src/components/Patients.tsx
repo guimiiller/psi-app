@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { Button } from './Button';
 
 interface Patients {
   name: string;
@@ -50,9 +51,9 @@ export function Patients() {
   };
 
   return (
-    <section className="bg-backgroundcolor flex flex-col items-center px-4 py-12 responsive-patients">
+    <section className="flex flex-col items-center px-4 py-20 responsive-patients"  style={{backgroundImage:"url('./bannersec3.png')", backgroundRepeat:"no-repeat", backgroundPosition:"center", backgroundSize:"cover"}}>
       <div>
-        <h2 className="text-colorTextGreen text-2xl sm:text-3xl mb-8 sm:mb-14 text-center">
+        <h2 className="text-colorTextGreen text-3xl mb-8 sm:mb-14 text-center">
           O QUE MEUS PACIENTES DIZEM
         </h2>
       </div>
@@ -64,7 +65,7 @@ export function Patients() {
           {patients.map((patients, index) => (
             <div
               key={index}
-              className={`absolute w-full h-full p-4 sm:p-6 bg-colorTextGreen text-white rounded-lg shadow-md flex flex-col sm:flex-row items-center sm:justify-between transition-opacity duration-500 ${
+              className={`absolute w-full h-full p-4 sm:p-6 bg-colorTextGreen text-white rounded-md shadow-md flex flex-col sm:flex-row items-center sm:justify-between transition-opacity duration-500 ${
                 index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
               }`}
             >
@@ -107,6 +108,7 @@ export function Patients() {
           </button>
         </div>
       </div>
+      <Button isMargin={true} variant='filled' />
     </section>
   );
 }

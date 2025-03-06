@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Site Modelo para Psicólogas  
 
-## Getting Started
+![preview](/preview.jpeg)  
 
-First, run the development server:
+> Landing Page Profissional para Psicólogas  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Este projeto foi criado para demonstrar minhas habilidades em **Next.js 15**, utilizando as mais recentes funcionalidades do framework. Ele apresenta um **site modelo para psicólogas**, focado em alta conversão, design moderno e experiência intuitiva. O objetivo principal é destacar minha capacidade de criar interfaces profissionais, responsivas e otimizadas para SEO.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Tecnologias  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js 15  
+- TypeScript  
+- Tailwind CSS 
+- Git/GitHub  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💻 O que aprendi  
 
-## Learn More
+- **Criação de uma landing page de alta conversão**, estruturada para destacar os serviços da psicóloga e facilitar a captação de pacientes.  
+- **Desenvolvimento do design no Figma**, garantindo uma interface visualmente atraente, intuitiva e alinhada com a identidade profissional.  
+- **Aprofundamento em Tailwind CSS**, explorando classes utilitárias para criar um design responsivo, consistente e moderno de forma ágil.  
+- **Melhoria na escrita de código em TypeScript**, garantindo maior segurança e escalabilidade no desenvolvimento do projeto.  
+- **Aplicação das novas funcionalidades do Next.js 15**, como layouts aninhados e React Server Components, tornando o site mais modular e performático.
 
-To learn more about Next.js, take a look at the following resources:
+## 📨 Contato  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- guilhermemillerblack@gmail.com  

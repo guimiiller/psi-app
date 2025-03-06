@@ -8,6 +8,7 @@ import { Faq } from "@/components/Faq";
 import { Header } from "@/components/Header";
 import { Patients } from "@/components/Patients";
 import { Footer } from "@/components/Footer";
+import { Whats } from "@/components/Whats";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Faq />
       <Contact />
       <Footer />
+      <Whats />
     </div>
   );
 }

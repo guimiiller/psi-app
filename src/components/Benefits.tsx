@@ -48,14 +48,21 @@ export function Benefits() {
                 ))}
             </div>
 
-            {/* Modal */}
             <Dialog open={open} onOpenChange={setOpen}>
                 <DialogContent className="bg-colorTextGreen p-6 rounded-sm shadow-lg text-center border-none flex flex-col items-center justify-center">
                     <DialogHeader className="flex flex-col items-center justify-center">
                         {selectedBenefit && (
                             <>
-                                <Image src={selectedBenefit.icon} alt={selectedBenefit.title} width={60} height={60} className="mx-auto"/>
-                                <DialogTitle className="text-xl font-normal text-white mt-4">{selectedBenefit.title}</DialogTitle>
+                                <Image 
+                                    src={selectedBenefit.icon} 
+                                    alt={selectedBenefit.title} 
+                                    width={60} 
+                                    height={60} 
+                                    className="mx-auto"
+                                />
+                                <DialogTitle className="text-xl font-normal text-white mt-4">
+                                    {selectedBenefit.title}
+                                </DialogTitle>
                             </>
                         )}
                     </DialogHeader>

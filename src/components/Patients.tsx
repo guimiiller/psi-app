@@ -24,14 +24,14 @@ const patients: Patients[] = [
     age: 34,
     message:
       'Lorem Ipsum sobreviveu não só a cinco séculos, mas também ao salto para a editoração eletrônica.',
-    image: '/images/john.jpg',
+    image: '/testimonial1.svg',
   },
   {
     name: 'Jane Smith',
     age: 29,
     message:
       'Se você precisa de um texto de preenchimento, Lorem Ipsum é a solução perfeita!',
-    image: '/images/jane.jpg',
+    image: '/testimonial1.svg',
   },
 ];
 
@@ -51,7 +51,7 @@ export function Patients() {
   };
 
   return (
-    <section className="flex flex-col items-center px-4 py-20 responsive-patients"  style={{backgroundImage:"url('./bannersec3.png')", backgroundRepeat:"no-repeat", backgroundPosition:"center", backgroundSize:"cover"}}>
+    <section id='patients' className="flex flex-col items-center px-4 py-20 responsive-patients"  style={{backgroundImage:"url('./bannersec3.png')", backgroundRepeat:"no-repeat", backgroundPosition:"center", backgroundSize:"cover"}}>
       <div>
         <h2 className="text-colorTextGreen text-3xl mb-8 sm:mb-14 text-center">
           O QUE MEUS PACIENTES DIZEM

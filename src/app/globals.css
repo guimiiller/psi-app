@@ -4,7 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+/* Reset e configurações globais */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,21 +16,26 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
 
-/* Arquivo styles.css */
+html {
+  background-color: #FBFBFB;
+}
 
+/* Estilos gerais */
+.image-banner {
+  width: 300px;
+  height: 400px;
+}
 
-@media (min-width: 1440px){
+/* Responsividade */
+@media (min-width: 1440px) {
   .buttons-grid {
     max-width: 300px;
   }
-  
 }
 
-/* Media queries para dispositivos móveis */
 @media (max-width: 769px) {
   .area-container {
     padding: 1rem;
@@ -38,7 +44,11 @@
     padding-left: 40px;
   }
 
-  .responsive-atuation{
+  .responsive-atuation {
+    background-image: url('../../public/bannersec1mob.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-bottom: 0;
   }
 
@@ -46,100 +56,174 @@
     flex-direction: row;
     max-width: 500px;
   }
-  .responsive-section-about{
-    padding-top: 0;
-  }
-  
-  .responsive-section-about div{
-    flex-direction: column;
-  }
-
-  .responsive-about{
-    margin: 0;
-  } 
 
   .buttons-grid button {
     width: 350px;
     height: 150px;
   }
 
-  .text-align-banner{
-    text-align: center;
-    align-items: center;
-    margin: 0 16px;
+  .responsive-section-about {
+    padding-top: 0;
   }
 
-  .responsive-about h2{
+  .responsive-section-about div {
+    flex-direction: column;
+  }
+
+  .responsive-about {
+    margin: 0;
+  }
+
+  .responsive-about h2 {
     font-size: 40px;
   }
 
-  .responsive-about p{
+  .responsive-about p {
     font-size: 14px;
   }
 
-  .responsive-about h3{
+  .responsive-about h3 {
     font-size: 20px;
     line-height: 25px;
+    margin-bottom: 50px;
   }
 
   .contact-box {
     top: 40px;
     left: 50%;
     transform: translateX(-50%);
-  }  
+  }
+
+  .section-banner {
+    flex-direction: column;
+  }
+
+  .responsive-banner {
+    margin-top: 180px;
+  }
+
+  .image-banner {
+    width: 350px;
+    margin-top: 30px;
+  }
+
+  .crp {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .responsive-patients {
+    padding-top: 20px;
+  }
+
+  .text-align-banner{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
 }
 
 @media (max-width: 480px) {
-  /* Ajustes para telas ainda menores */
   .area-container {
     padding: 1rem;
     width: 100%;
   }
 
-  .area-container h2{
+  .area-container h2 {
     font-size: 30px;
   }
 
-  .square-atuation{
+  .square-atuation {
     padding: 0;
   }
 
-  .responsive-benefits{
-    padding: 40px 16px;
-  }
-
-  .responsive-faq{
+  .responsive-benefits,
+  .responsive-faq {
     padding: 40px 16px;
   }
 
   .buttons-grid button {
-    height: 90px;
+    height: 130px;
+    align-items: center;
   }
 
-  .text-align-banner h1{
-    font-size: 50px;
+  .buttons-grid button p {
+    display: none;
+  }
+
+  .text-align-banner {
+    max-width: 700px;
+    margin-top: 150px;
+  }
+
+  .text-align-banner h1 {
+    font-size: 57px;
     line-height: 55px;
     margin: 0;
   }
 
-  .text-align-banner h2{
+  .text-align-banner h2 {
     font-size: 17px;
   }
 
-  .responsive-count{
+  .responsive-count {
     padding: 30px 0;
   }
 
-  .responsive-patients{
+  .responsive-patients {
     padding-top: 25px;
+  }
+
+  .responsive-footer {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .responsive-banner {
+    margin-top: 30px;
+  }
+
+  .contact-box {
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
-@media (max-width: 376px){
+@media (max-width: 376px) {
   .contact-box {
     width: 300px;
-  }  
-} 
+  }
+}
+
+@media (max-width: 321px) {
+  .image-banner {
+    width: 310px;
+  }
+}
+
+/* Barra de Rolagem */
+::-webkit-scrollbar-track {
+  background-color: #FFF;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background: #4CAF93;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4CAF93;
+  border-radius: 5px;
+}
+
+
+@media(max-width: 768px) {
+  ::-webkit-scrollbar {
+      display: none; 
+  }
+}
 
 @layer base {
   :root {

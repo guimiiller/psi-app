@@ -7,7 +7,6 @@ type Article = {
     content: string;
 };
 
-// Define os artigos e informa ao TypeScript que pode ser indexado por string
 const articles: Record<string, Article> = {
     "saude-mental": {
         title: "Saúde Mental no Dia a Dia",
@@ -113,10 +112,14 @@ const articles: Record<string, Article> = {
     }
 };
 
-export default function ArticlePage({ params }: { params: { slug: string } }) {
+type Params = {
+    slug: string;
+}
+
+export default function ArticlePage({ params }: { params: Params }) {
     const article = articles[params.slug];
 
-    if (!article) return notFound(); 
+    if (!article) return notFound();  
 
     return (
         <main className="mx-auto py-10 px-5 bg-[#FBFBFB]" style={{backgroundImage:"url('../bannersec3.png')", backgroundRepeat:"no-repeat", backgroundPosition:"center", backgroundSize:"cover"}}>

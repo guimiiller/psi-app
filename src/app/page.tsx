@@ -9,6 +9,7 @@ import { Header } from "@/components/Header";
 import { Patients } from "@/components/Patients";
 import { Footer } from "@/components/Footer";
 import { Whats } from "@/components/Whats";
+import { Articles } from "@/components/Articles";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Patients />
       <Count />
       <Benefits />
+      <Articles />
       <Faq />
       <Contact />
       <Footer />

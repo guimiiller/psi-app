@@ -52,7 +52,7 @@ export function Header() {
 
             {/* Menu Mobile */}
             <div className={`fixed top-0 right-0 w-full h-full bg-colorTextGreen flex flex-col items-center justify-center md:hidden transition-transform duration-300 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
-                <ul className="flex flex-col items-center justify-center gap-6">
+                <ul className="flex flex-col  justify-center gap-6">
                     <li><Link href="/" className="text-white text-lg uppercase tracking-wider px-4 py-2 hover:text-gray-300 transition" onClick={() => setMenuOpen(false)}>Home</Link></li>
                     <li><Link href="#about" className="text-white text-lg uppercase tracking-wider px-4 py-2 hover:text-gray-300 transition" onClick={() => setMenuOpen(false)}>Sobre</Link></li>
                     <li><Link href="#projects" className="text-white text-lg uppercase tracking-wider px-4 py-2 hover:text-gray-300 transition" onClick={() => setMenuOpen(false)}>Projetos</Link></li>

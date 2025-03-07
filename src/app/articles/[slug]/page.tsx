@@ -1,10 +1,12 @@
-"use client"
-
 import { notFound } from "next/navigation";
 
 type Article = {
     title: string;
     content: string;
+};
+
+type Params = {
+    slug: string;
 };
 
 const articles: Record<string, Article> = {
@@ -112,14 +114,10 @@ const articles: Record<string, Article> = {
     }
 };
 
-type Params = {
-    slug: string;
-}
-
 export default function ArticlePage({ params }: { params: Params }) {
     const article = articles[params.slug];
 
-    if (!article) return notFound();  
+    if (!article) return notFound();
 
     return (
         <main className="mx-auto py-10 px-5 bg-[#FBFBFB]" style={{backgroundImage:"url('../bannersec3.png')", backgroundRepeat:"no-repeat", backgroundPosition:"center", backgroundSize:"cover"}}>

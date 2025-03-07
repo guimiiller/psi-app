@@ -9,7 +9,7 @@ export function Banner() {
             <div className="responsive-banner flex flex-col">
                 <div className="flex flex-col max-w-2xl mb-10 ml-16 mt-24 text-white items-start text-left text-align-banner">
                     <h1 className="text-colorTextGreen tracking-wider text-7xl my-[48px]">
-                        PSICÓLOGA LUDIMYLA LOPES
+                        PSICÓLOGA [NOME DA PSI.]
                     </h1>
                     <h2 className="text-xl font-light text-colorTextGray sm:text-lg mb-2">
                         Aqui, você encontra um espaço seguro para o autoconhecimento e o bem-estar emocional.

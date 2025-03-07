@@ -16,7 +16,7 @@ export function Contact() {
                         Telefone
                     </p>
                     <p className="text-white mb-4">
-                        <Link href={'/'}>(11) 98765-4321</Link>
+                        <Link href={'/'}>(11) 99999-9999</Link>
                     </p>
 
                     <p className="text-white flex">

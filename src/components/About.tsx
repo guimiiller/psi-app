@@ -15,7 +15,7 @@ export function About() {
             <div className="flex items-center justify-center">
                 <div className="flex flex-col max-w-[790px] w-full md:ml-10 lg:ml-20 responsive-about mr-20">
                     <h4 className="text-lg text-colorTextGray mb-2">Quem sou eu</h4>
-                    <h2 className="text-5xl text-colorTextGreen mb-6 md:mb-16">PSI. LUDIMYLA LOPES</h2>
+                    <h2 className="text-5xl text-colorTextGreen mb-6 md:mb-16">PSI. [NOME DA PSI.]</h2>
                     
                     <div className="max-w-[600px]">
                         <p className="text-colorTextGray text-base">

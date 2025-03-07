@@ -42,16 +42,16 @@ export function Articles() {
                         className="relative rounded-lg shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition-all duration-300 h-96 flex items-end border-[3px] border-colorTextGreen"
                         onClick={() => router.push(`/articles/${article.slug}`)}
                     >
-
+                        {/* Imagem de fundo */}
                         <div 
                             className="absolute inset-0 bg-cover bg-center" 
                             style={{ backgroundImage: `url(${article.image})` }}
                         ></div>
                         
-
+                        {/* Sobreposição escura para legibilidade */}
                         <div className="absolute inset-0 bg-black/45"></div>
 
-
+                        {/* Texto */}
                         <div className="relative p-6 text-left text-white z-10">
                             <h3 className="text-xl font-medium text-colorTextGreen">{article.title}</h3>
                             <p className="text-sm mt-2">{article.description}</p>

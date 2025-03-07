@@ -1,3 +1,5 @@
+"use client"
+
 import { notFound } from "next/navigation";
 
 type Article = {
@@ -114,7 +116,7 @@ const articles: Record<string, Article> = {
 export default function ArticlePage({ params }: { params: { slug: string } }) {
     const article = articles[params.slug];
 
-    if (!article) return notFound(); // Se o slug não existir, retorna erro 404
+    if (!article) return notFound(); 
 
     return (
         <main className="mx-auto py-10 px-5 bg-[#FBFBFB]" style={{backgroundImage:"url('../bannersec3.png')", backgroundRepeat:"no-repeat", backgroundPosition:"center", backgroundSize:"cover"}}>

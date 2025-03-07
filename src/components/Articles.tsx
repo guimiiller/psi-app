@@ -54,6 +54,11 @@ export function Articles() {
                             <h3 className="text-xl font-medium text-colorTextGreen">{article.title}</h3>
                             <p className="text-sm mt-2">{article.description}</p>
                         </div>
+
+                        {/* Tooltip visível sempre */}
+                        <div className="absolute bottom-80 left-1/2 transform -translate-x-1/2 bg-black/70 text-white text-[12px] px-2 py-1 rounded-[5px]">
+                            Clique para ver mais
+                        </div>
                     </div>
                 ))}
             </div>

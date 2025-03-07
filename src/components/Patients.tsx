@@ -13,7 +13,7 @@ interface Patients {
 
 const patients: Patients[] = [
   {
-    name: 'Aliyah Brown',
+    name: 'Aliyah Smith',
     age: 27,
     message:
       'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem. Bandeja de tipos e os embaralhou para fazer um livro.',
@@ -24,14 +24,14 @@ const patients: Patients[] = [
     age: 34,
     message:
       'Lorem Ipsum sobreviveu não só a cinco séculos, mas também ao salto para a editoração eletrônica.',
-    image: '/testimonial1.svg',
+    image: '/testimonial2.svg',
   },
   {
     name: 'Jane Smith',
     age: 29,
     message:
       'Se você precisa de um texto de preenchimento, Lorem Ipsum é a solução perfeita!',
-    image: '/testimonial1.svg',
+    image: '/testimonial3.svg',
   },
 ];
 
